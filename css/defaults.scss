@@ -1,0 +1,30 @@
+* { 
+	@include box-sizing(border-box);
+}
+
+body, html { 
+	font-family: trade; 
+	height: 100%; 
+	width: 100%;
+	color: $font-body-color;
+}
+
+h1, h2, h3 {
+	font-family: tradecondensed;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.container { 
+	height: 100%; 
+	width: 100%;
+}
+
+.view {
+	margin: 0 0 0 0;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}

@@ -9,24 +9,15 @@ $blue: #0D8DCF;
 $light-gray: #fbfbfb;
 $dark-gray: #101010;
 
+$font-body-color: #222222; 
+
 /* Defaults - Visuals */
-* { 
-	@include box-sizing(border-box);
-}
 $radius: 4px;
-body, html { font-family: trade; height: 100%; width: 100%; }
-.container { height: 100%; width: 100%; }
 
 .basement-nav { display: none; }
 
-.view {
-	margin: 0 0 0 0;
-	padding: 20px;
-	position: relative;
-	display: inline-block;
-	float: left;
-}
 
+@import "defaults";
 @import "main-nav";
 @import "sub-nav";
 @import "basement-nav";
