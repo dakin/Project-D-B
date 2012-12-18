@@ -1137,9 +1137,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 /* Defaults - Colors */
 /* Defaults - Visuals */
-.basement-nav {
-  display: none; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1243,12 +1240,12 @@ h1, h2, h3 {
   transition: all 0.3s ease-in-out;
   position: relative;
   top: 0;
-  left: 0;
+  left: 58px;
   z-index: 500;
   float: left;
   display: inline-block;
   overflow: hidden;
-  margin: 0 0 0 58px;
+  margin: 0 0 0 0;
   padding: 20px;
   background: gainsboro;
   width: 250px;
@@ -1272,3 +1269,13 @@ h1, h2, h3 {
     margin: 0 0 0 10px; }
   .sub-nav li {
     padding: 3px 0; }
+
+.basement-nav {
+  display: inline-block;
+  float: left;
+  background: black;
+  width: 200px;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  display: none; }

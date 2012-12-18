@@ -14,6 +14,18 @@ $font-body-color: #222222;
 /* Defaults - Visuals */
 $radius: 4px;
 
+<<<<<<< HEAD
+.basement-nav { display: none; }
+
+=======
+.view {
+	margin: 0 0 0 0;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+>>>>>>> 0c95316ef2823b3cd4e92291a249b68e360433e2
 
 @import "defaults";
 @import "main-nav";
