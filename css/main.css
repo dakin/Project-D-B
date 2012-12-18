@@ -1151,9 +1151,6 @@ body, html {
   height: 100%;
   width: 100%; }
 
-.basement-nav {
-  display: none; }
-
 .view {
   margin: 0 0 0 0;
   padding: 20px;
@@ -1236,15 +1233,25 @@ body, html {
   transition: all 0.3s ease-in-out;
   position: relative;
   top: 0;
-  left: 0;
+  left: 58px;
   z-index: 500;
   float: left;
   display: inline-block;
   overflow: hidden;
-  margin: 0 0 0 58px;
+  margin: 0 0 0 0;
   padding: 20px;
   background: gainsboro;
   width: 250px;
   height: 100%; }
   .sub-nav.collapsed {
     width: 10px; }
+
+.basement-nav {
+  display: inline-block;
+  float: left;
+  background: black;
+  width: 200px;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  display: none; }

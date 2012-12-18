@@ -2,13 +2,13 @@
 	@include transition (all 0.3s ease-in-out);
 	position: relative;
 	top: 0;
-	left: 0;
+	left: 58px;
 	z-index: 500;
 	float: left;
 	display: inline-block;
 	overflow: hidden;
 
-	margin: 0 0 0 58px;
+	margin: 0 0 0 0;
 	padding: 20px;
 	background: lighten($dark-gray, 80%);
 
