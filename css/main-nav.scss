@@ -1,0 +1,80 @@
+/* Main Nav */
+
+.main-nav {
+	@include background(linear-gradient(left, $dark-gray, lighten($dark-gray, 5%)));
+	@include transition (all 0.3s ease-in-out);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 58px;
+	color: white;
+	overflow: hidden;
+	z-index: 1000;
+
+	ul, li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	ul {
+		width: 500px;
+	}
+
+	li {
+		padding: 15px;
+
+		&:hover {
+			background: rgba(0,0,0,0.2);
+		}
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		padding: 10px 0 10px 0;
+		margin: 0;
+		display: inline-block;
+	}
+
+	i {
+		font-size: 22px;
+		font-weight: normal;
+		margin-right: 15px;
+	}
+
+	
+
+	.user-nav {
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+
+		li {
+			padding-left: 15px;
+		}
+
+		.hudl-logo {
+			background: rgba(255,255,255,0.05);
+			padding-top: 15px;
+
+			a {
+				background: url(../images/hudl-logo.png) 3px 3px no-repeat;
+				background-size: 74px;
+				width: 26px;
+				height: 10px;
+				@include transition (all 0.3s ease-in-out);
+			}
+		}
+	}
+}
+
+.main-nav:hover {
+	width: 200px;
+	@include box-shadow(0 0 10px 3px rgba(0,0,0,0.5));
+
+	.hudl-logo a {
+		width: 150px;
+	}
+}

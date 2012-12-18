@@ -1,0 +1,7 @@
+@include font-face(trade, '../fonts/trade-gothic-roman', normal);
+@include font-face(trade, '../fonts/trade-gothic-bold', bold);
+
+@include font-face(tradecondensed, '../fonts/trade-gothic-cn-18', normal);
+@include font-face(tradecondensed, '../fonts/trade-gothic-bold-cn-20', bold);
+
+@include font-face(FontAwesome, '../fonts/fontawesome-webfont', normal, normal);

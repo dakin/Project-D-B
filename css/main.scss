@@ -1,2 +1,31 @@
 @import "normalize";
 @import "bourbon/bourbon";
+@import "fonts";
+@import "font-awesome";
+
+/* Defaults - Colors */
+$orange: #f87620;
+$blue: #0D8DCF;
+$light-gray: #fbfbfb;
+$dark-gray: #101010;
+
+/* Defaults - Visuals */
+* { 
+	@include box-sizing(border-box);
+}
+$radius: 4px;
+body, html { font-family: trade; height: 100%; width: 100%; }
+.container { height: 100%; width: 100%; }
+
+.basement-nav { display: none; }
+
+.view {
+	margin: 0 0 0 0;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+@import "main-nav";
+@import "sub-nav";
