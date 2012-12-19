@@ -43,11 +43,16 @@
 		font-size: 14px;
 	}
 
+	ul{
+		padding: 0 0 18px 0;
+		border-bottom: 1px solid darken($light-gray, 10%);
+	}
+
 	a {
-		@include transition (all 0.2s ease-in-out);
+		@include transition (all 0.1s ease-in);
 		font-family: tradecondensed;
 		position: relative;
-		padding: 2px 8px;
+		padding: 7px 8px 4px 8px;
 		text-decoration: none;
 		color: lighten($dark-gray, 30%);
 		display: inline-block;
@@ -69,6 +74,7 @@
 
 		&:hover, &:active, &.current {
 			color: $dark-gray;
+			background: lighten($light-gray, 70%);
 
 			i.icon-chevron-right {
 				margin-right: 0px;
@@ -84,7 +90,7 @@
 
 		i {
 			@include transition (all 0.2s ease-in-out);
-			font-size: 14px;
+			font-size: 16px;
 			padding: 0 5px 0 0;
 
 			&.icon-chevron-right {
