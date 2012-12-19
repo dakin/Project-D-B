@@ -35,6 +35,11 @@
 	a{
 		color: $orange;
 		text-decoration: none;
+		
+		&:hover{
+			color: $blue;
+		}
+
 	}
 
 	&.show {

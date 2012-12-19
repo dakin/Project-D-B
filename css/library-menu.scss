@@ -16,21 +16,55 @@
 		overflow: hidden;
 		padding: 50px;
 		text-align: center;
+		border-bottom: 1px solid #ddd;
 
 		ul {
 		}
 
 		li {
 			margin: 10px 50px;
-			background: lighten($dark-gray, 50%);
-			text-align: center;
+			text-align: left;
+			height: 720px * 0.22;
+			width: 1280px * 0.335;
 
 			a {
-				height: 720px * 0.37;
-				width: 1280px * 0.37;
-				display: inline-block;
 				color: $dark-gray;
 				text-decoration: none;
+				display: inline-block;
+			}
+
+			.thumb{
+				background: lighten($dark-gray, 50%);
+				height: 720px * 0.22;
+				width: 1280px * 0.22;
+			}
+
+			.title{
+				font-family: tradecondensed;
+				font-weight: bold;
+				font-size: 22px;
+				position: relative;
+				top: -720px * 0.22;
+				left: 1280px * 0.22;
+				padding: 0 0 0 10px;
+			}
+
+			.details{
+				font-size: 13px;
+				padding: 0 0 0 10px;
+				position: relative;
+				top: -720px * 0.22;
+				left: 1280px * 0.22;
+			}
+
+			ul, li{
+				background: none;
+				float: none;
+				display: block;
+				margin: 0;
+				padding: 5px 0 5px 0;
+				height: auto;
+				width: auto;
 			}
 		}
 	}
@@ -39,19 +73,58 @@
 		padding: 50px;
 		text-align: center;
 		overflow: hidden;
+		@include background(linear-gradient(top, #fff, $light-gray));
+		border-top: 1px solid #fff;
+		}
+	
+		.season-picker{
+			background: #fff;
+			border: 1px solid #ddd;
+			@include border-radius(20px);
+			width: 270px;
+			font-family: tradecondensed;
+			font-weight: bold;
+			font-size: 22px;
+			margin: 0 auto;
 
-		li {
-			margin: 15px 30px;
-			background: lighten($dark-gray, 50%);
-			text-align: center;
+			&:hover{
+				background: lighten($dark-gray, 85%);
+			}
 
-			a {
-				height: 720px * 0.2;
-				width: 1280px * 0.2;
+			div{
 				display: inline-block;
-				color: $dark-gray;
-				text-decoration: none;
+				border-right: 1px solid #ddd;
+				border-left: 1px solid #ddd;
+				padding: 0 50px 0 50px;
+				background: #fff;
+			}
+
+			i{
+				font-size: 18px;
+				position: relative;
+				top: -1px;
+				padding: 0 15px 0 15px;
+
+				&:hover{color: $orange;}
 			}
 		}
-	}
+
+		.game-list{
+			margin: 35px 0 0 0;
+
+			li {
+				margin: 15px 30px;
+				background: lighten($dark-gray, 50%);
+				text-align: center;
+
+				a {
+					height: 720px * 0.167;
+					width: 1280px * 0.167;
+					display: inline-block;
+					color: $dark-gray;
+					text-decoration: none;
+				}
+			}
+
+		}
 }
