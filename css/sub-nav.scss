@@ -41,13 +41,13 @@
 	a {
 		padding: 2px 10px;
 		text-decoration: none;
-		color: $orange;
+		color: lighten($dark-gray, 50%);
 		display: inline-block;
 		width: 110%;
 		margin-right: -15px;
 
 		&:hover {
-			background: $orange;
+			background: lighten($dark-gray, 50%);
 			color: white;
 		}
 	}

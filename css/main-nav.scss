@@ -44,7 +44,20 @@
 		margin-right: 15px;
 	}
 
-	
+	.app-nav {
+
+		a {
+			position: relative;
+		}
+
+		.sport {
+			color: lighten($dark-gray, 35%);
+			font-size: 12px;
+			position: absolute;
+			top: 36px;
+			left: 44px;
+		}
+	}
 
 	.user-nav {
 		position: absolute;
