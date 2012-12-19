@@ -9,8 +9,13 @@
 	overflow: hidden;
 
 	margin: 0 0 0 0;
-	padding: 20px 20px 20px 78px;
+<<<<<<< HEAD
+	padding: 20px;
 	background: lighten($dark-gray, 85%);
+=======
+	padding: 20px 20px 20px 78px;
+	background: lighten($dark-gray, 80%);
+>>>>>>> 15fe6abcf40925ff8509d1bb88654d3e06d02ebd
 
 	width: 308px;
 	height: 100%;
@@ -19,6 +24,7 @@
 		width: 10px;
 	}
 
+<<<<<<< HEAD
 	h2 {
 		font-size: 36px;
 		line-height: 32px;
@@ -52,4 +58,6 @@
 		}
 	}
 
+=======
+>>>>>>> 15fe6abcf40925ff8509d1bb88654d3e06d02ebd
 }
