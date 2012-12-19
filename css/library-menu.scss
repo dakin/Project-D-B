@@ -1,0 +1,57 @@
+.library-menu {
+
+	ul, li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+		display: inline-block;
+	}
+
+	.recent-games {
+		background: lighten($dark-gray, 85%);
+		overflow: hidden;
+		padding: 50px;
+		text-align: center;
+
+		ul {
+		}
+
+		li {
+			margin: 10px 50px;
+			background: lighten($dark-gray, 50%);
+			text-align: center;
+
+			a {
+				height: 720px * 0.37;
+				width: 1280px * 0.37;
+				display: inline-block;
+				color: $dark-gray;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.season {
+		padding: 50px;
+		text-align: center;
+		overflow: hidden;
+
+		li {
+			margin: 15px 30px;
+			background: lighten($dark-gray, 50%);
+			text-align: center;
+
+			a {
+				height: 720px * 0.2;
+				width: 1280px * 0.2;
+				display: inline-block;
+				color: $dark-gray;
+				text-decoration: none;
+			}
+		}
+	}
+}
