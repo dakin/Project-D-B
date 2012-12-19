@@ -1,4 +1,4 @@
 $('.team-menu').click(function () {
-    $('.basement-nav').toggle();
+    $('.basement-nav').toggleClass('show');
     $('.main-nav').toggleClass('basement-show');
 });
