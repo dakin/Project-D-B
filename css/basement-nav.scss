@@ -8,3 +8,15 @@
 	color: white;
 	display: none;
 }
+
+.basement-show{
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 150px;
+	@include box-shadow(0 0 10px 3px rgba(0,0,0,0.5));
+
+	.hudl-logo a {
+		width: 150px;
+	}
+}
