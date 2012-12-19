@@ -9,10 +9,23 @@
 .timeline{
 	background: #ddd;
 	width: 25%;
-	padding: 1%;
+	padding: 31px 1% 1% 1%;
 	height: 100%;
 
 	.pinned{background: #aaa;}
+
+	.bar{
+		background: #fff;
+		width: 50%;
+		height: 15px;
+		margin: 0 5px 0 0;
+	
+		.barcomplete{
+			width: 28%;
+			background: $orange;
+			height: 15px;
+		}
+	}
 
 	li{}
 
