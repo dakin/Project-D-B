@@ -46,9 +46,29 @@
 		width: 110%;
 		margin-right: -15px;
 
-		&:hover {
+		&:hover, &:active, &.current {
 			background: lighten($dark-gray, 50%);
 			color: white;
+		}
+	}
+
+	.expand {
+		background: lighten($dark-gray, 85%);
+		padding: 5px;
+		position: absolute;
+		right: 15px;
+		top: 23px;
+	}
+
+	.storage {
+		position: absolute;
+		bottom: 10px;
+		left: 75px;
+
+		.expand {
+			right: -5px;
+			top: 18px;
+			font-size: 10px
 		}
 	}
 
