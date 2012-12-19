@@ -13,10 +13,15 @@ $font-body-color: #222222;
 
 /* Defaults - Visuals */
 $radius: 4px;
+*:focus {outline: none;}
+.lfloat{float: left;}
+.rfloat{float: right;}
+.lalign{text-align: left;}
+.ralign{text-align: right;}
 
 
 @import "defaults";
 @import "main-nav";
 @import "sub-nav";
 @import "basement-nav";
-@import "library"
+@import "library";
