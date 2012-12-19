@@ -9,10 +9,10 @@
 	overflow: hidden;
 
 	margin: 0 0 0 0;
-	padding: 20px 20px 20px 78px;
+	padding: 20px 20px 20px 20px;
 	background: lighten($dark-gray, 90%);
 
-	width: 308px;
+	width: 250px;
 	height: 100%;
 
 	&.collapsed {
@@ -106,11 +106,11 @@
 
 	.storage {
 		position: absolute;
-		bottom: 20px;
-		left: 78px;
+		bottom: 0px;
+		left: 0px;
 		@include box-shadow(0px 6px 10px 10px rgba(0,0,0,0.05));
-		margin: -20px;
-		padding: 0 24px 15px 21px;
+		margin: 0px;
+		padding: 0 24px 15px 22px;
 
 		.expand {
 			right: 5px;
