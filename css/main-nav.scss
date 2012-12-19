@@ -24,9 +24,19 @@
 
 	li {
 		padding: 15px;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
 
 		&:hover {
-			background: rgba(0,0,0,0.2);
+			border-top: 1px solid #222;
+			border-bottom: 1px solid #222;
+			background: rgba(0,0,0,0.4);
+		}
+
+		&.active{
+			border-top: 1px solid #333;
+			border-bottom: 1px solid #333;
+			@include background(linear-gradient(left, lighten($dark-gray, 10%), lighten($dark-gray, 15%)));
 		}
 	}
 

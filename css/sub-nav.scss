@@ -11,6 +11,7 @@
 	margin: 0 0 0 0;
 	padding: 20px 20px 20px 20px;
 	background: lighten($dark-gray, 90%);
+	@include box-shadow(5px 0 10px 3px rgba(0,0,0,0.1));
 
 	width: 250px;
 	height: 100%;
@@ -112,6 +113,8 @@
 		margin: 0px;
 		padding: 0 24px 15px 22px;
 		border-top: 1px solid #fff;
+		background: #e8e8e8;
+		z-index: 501;
 
 		.expand {
 			right: 5px;

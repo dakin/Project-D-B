@@ -37,7 +37,7 @@
         		<ul class="app-nav">
         			<li class="team-menu"><a href="#"><i class="icon-reorder"></i>Lincoln East<span class="sport">Varsity Football</span></a></li>
         			<li class="dashboard"><a href="dashboard.html"><i class="icon-dashboard"></i>Dashboard</a></li>
-        			<li class="library"><a href="library.html"><i class="icon-film"></i>Library</a></li>
+        			<li class="library active"><a href="library.html"><i class="icon-film"></i>Library</a></li>
         			<li class="trends"><a href="#"><i class="icon-bar-chart"></i>Trends</a></li>
         			<li class="team"><a href="#"><i class="icon-group"></i>Team</a></li>
         		</ul>
@@ -90,11 +90,12 @@
                 </div>
                 <div class="filterbar">
                     <div class="lfloat">
-                        <i class="icon-search"></i><input type="search" value="Filter by...">
+                        <i class="icon-search"></i><input type="search" value="Filter clips by...">
                     </div>
                     <div class="rfloat">
                         <ul class="lfloat">
                             <li><i class="icon-save"></i>Save Playlist</li>
+                            <li><i class="icon-columns"></i>Change Columns</li>
                             <li><i class="icon-download-alt"></i>Export to Excel</li>
                         </ul>
                     </div>
@@ -104,69 +105,416 @@
                     <table>
                         <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th>ODK</th>
-                                <th>DN</th>
-                                <th>DIST</th>
-                                <th>YARD LN</th>
-                                <th>GN/LS</th>
+                                <th class="small-col"><i class="icon-check-empty"></i></th>
+                                <th class="small-col"><i class="icon-star"></i></th>
+                                <th>ODK<i class="icon-sort"></i></th>
+                                <th>DN<i class="icon-sort"></i></th>
+                                <th>DIST<i class="icon-sort"></i></th>
+                                <th>YARD LN<i class="icon-sort"></i></th>
+                                <th>GN/LS<i class="icon-sort"></i></th>
+                                <th style="width: 100%;"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>1</td>
                                 <td>10</td>
                                 <td>25</td>
                                 <td>2</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>2</td>
                                 <td>8</td>
                                 <td>27</td>
                                 <td>2</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>3</td>
                                 <td>6</td>
                                 <td>29</td>
                                 <td>6</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>1</td>
                                 <td>10</td>
                                 <td>35</td>
                                 <td>5</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>2</td>
                                 <td>5</td>
                                 <td>40</td>
                                 <td>5</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
                                 <td>O</td>
                                 <td>1</td>
                                 <td>10</td>
                                 <td>45</td>
                                 <td>13</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>25</td>
+                                <td>2</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>8</td>
+                                <td>27</td>
+                                <td>2</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td>29</td>
+                                <td>6</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>45</td>
+                                <td>13</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>35</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
+                            </tr>
+                            <tr>
+                                <td class="small-col"><i class="icon-check-empty"></i></td>
+                                <td class="small-col"><i class="icon-star"></i></td>
+                                <td>O</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>40</td>
+                                <td>5</td>
+                                <td style="width: 100%;"></td>
                             </tr>
                         </tbody>
                     </table>
