@@ -2,13 +2,19 @@
 
 	.film{
 		background: $dark-gray;
-		width: 100%;
+		width: 70%;
 		height: 60%;
 	
 		.video{
 			position: relative;
 			left: 25%;
 			height: 100%;
+		}
+	}
+
+	.breakdown{
+		thead{
+			background: $orange;
 		}
 	}
 }
