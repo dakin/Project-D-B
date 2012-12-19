@@ -1,1 +1,1 @@
-$(".team-menu").click(function(){$(".basement-nav").toggle();$(".main-nav").toggleClass("basement-show")});
+$(".team-menu").click(function(){$(".basement-nav").toggleClass("show");$(".main-nav").toggleClass("basement-show")});
